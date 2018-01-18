@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Set Page Color Popup</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      font-family: sans-serif;
+      font-size: 0.8em;
+      width: 100px;
+      margin-top: 1px;
+      background: #cccccc;
+    }
+    div:hover {
+      background: #aaaaaa;
+    }
+    #red {
+      border: 1px solid red;
+      color: red;
+    }
+    #blue {
+      border: 1px solid blue;
+      color: blue;
+    }
+    #green {
+      border: 1px solid green;
+      color: green;
+    }
+    #yellow {
+      border: 1px solid yellow;
+      color: yellow;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div>
+      <img src="https://jobspreader.com/LP/img/wms_jobspreader_logo_header.png" alt="" />
+      <h2>Parser Validator</h2>
+      <form>
+          <fieldset>
+              <label>Parser URL:</label>
+              <input type="text" name="wms_parser_url" id="wms_parser_url" value="">
+              <input type="submit" name="wms_validate_action" id="wms_validate_action" value="Validate"/>
+          </fieldset>
+      </fomr>
+    </div>
+  </body>
+</html>
